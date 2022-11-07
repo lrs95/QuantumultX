@@ -1456,8 +1456,6 @@ https?:\/\/api\.risingfalling\.com\/api\/vip\/detail url script-response-body ht
 https?:\/\/api\.magictouch\.design\/user\/user\/getUserByDevice url script-response-body https://raw.githubusercontent.com/lrs95/QX0/main/jiesuo/tutujizhang.js
 # > 077 咿啦看書解鎖V權限（2022-02-17）@ddgksf2013
 https?:\/\/bookapi\.ellabook\.cn\/rest\/api\/service$ url script-response-body https://raw.githubusercontent.com/lrs95/QX0/main/jiesuo/elabook.js
-# > 076 RNI解锁高级V（2022-02-15）by ddgksf2013
-https://pro-status-service-prod.azurewebsites.net/api/item url script-response-body https://raw.githubusercontent.com/lrs95/QX0/main/jiesuo/rf.js
 # > 075 儿歌点点(2022-02-08) by ddgksf2013
 http:\/\/gateway\.ergedd\.com\/dduser\/user\/center\/set url script-response-body https://raw.githubusercontent.com/lrs95/QX0/main/jiesuo/egdd.js
 # > 074 varlens(2022-02-02) by ddgksf2013
