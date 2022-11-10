@@ -1397,27 +1397,6 @@ https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$) url script
 http:\/\/wallpaper\.soutushenqi\.com\/api\/v1\/account url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/stsq.js
 # > gear浏览器插件+解锁订阅
 ^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$ url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gear.js
-Pro = type=http-response,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+))$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/revenuecat.js
-RC = type=http-request,pattern= ^https:\/\/api\.revenuecat\.com\/.+\/(receipts|subscribers\/(\$RCAnonymousID%)?([\u4E00-\u9FA5A-Za-z0-9-_]+)),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/bytq.js,script-update-interval=0
-Receipt = type=http-response,pattern=https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/verifyReceipt.js
-projects = type=http-response,pattern=^https://firebaseremoteconfig.googleapis.com/v1/projects/filebox-ac299/apps/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/projects.js
-;美颜相机VIP = type=http-response,pattern=^https://.*.mei(yan|tu).com\/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/myCamera.js
-flightradar24高级解锁 = type=http-response,pattern=^ https://mobile.flightradar24.com/mobile/(user-session|subscribe),requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flightradar24.js
-AgendaPro = type=http-response,pattern= ^https://accounts.agenda.com/users/.*/license,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Agenda.js
-DayOne = type=http-response,pattern= ^https:\/\/dayone\.app\/api\/v2\/users,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/dayone.js
-灵感足迹高级解锁 = type=http-response,pattern= ^https://backend.getdrafts.com/api/v1/verification/verify_receipt,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/Drafts.js
-effie解锁订阅 = type=http-response,pattern=  https://api.effie.(co|pro)/api/v1/user/member,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/effie.js
-itranslatePro = type=http-response,pattern=https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/iTranslate.js
-钱迹 = type=http-response,pattern=https://qianji.xxoojoke.com/vip/configios,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/qianji.js
-;Nicegram = type=http-response,pattern=^https?:\/\/restore-access\.indream\.app\/restoreAccess,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/nicegram.js,script-update-interval=0
-;酷我音乐 = type=http-response,pattern=https?:\/\/.*\.(kuwo|lrts)\.(cn|me)\/(a\.p|music\.pay|(vip\/(v2|enc)\/(theme|user\/vip))|(EcomResource|(Mobile)?Ad)Serv(er|ice)).*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nameking77/Qx/main/rewrite/kw.js,script-update-interval=0
-语音翻译器= type=http-response,pattern=https://app.xunjiepdf.com/api/v4/memprofile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/yyfyq.js,script-update-interval=0
-itranslate翻译 = type=http-response,pattern=https://ssl-api.itranslateapp.com/accounts/v4/subscriptions/verify/ios,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/itranslate.js,script-update-interval=0
-sleepcycle = type=http-response,pattern=https://ch.sleepcycle.com/(useraccountstats|api/v1/subscription/get$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/sleepcycle.js,script-update-interval=0
-adguard = type=http-response,pattern=https://mobile-api.adguard.com/api/2.0/ios_validate_receipt/.*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/adguard.js,script-update-interval=0
-今日热榜 = type=http-response,pattern=^https://api2.tophub.app/account/sync,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/jinrirebang.js,script-update-interval=0
-flow = type=http-response,pattern=^https://.*.flownow.cn/v\d.\d.0/(.*|user.info),requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flow.js,script-update-interval=0
-flomo = type=http-response,pattern=^https://flomoapp.com/api/v1/user/me,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/flomo.js,script-update-interval=0
 # > 年轮3解锁永久订阅
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/Mematom3ProCrack.js
 # > 小组件盒子——解锁VIP
