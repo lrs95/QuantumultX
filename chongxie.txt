@@ -1385,6 +1385,8 @@ https?:\/\/res\.xiaojukeji\.com\/resapi\/activity\/get(Ruled|Preload|PasMultiNot
 ^https?:\/\/.+?\.(pipi|fuli|xiang(jiao|xiang))apps\.com\/(ucp\/index|getGlobalData|(\/|)vod\/reqplay\/) url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/xjsp.js
 # > 其他广告
 # > 解锁
+# ～ RevenueCat多合一脚本（2022-11-12）@ddgksf2013
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/(\$RCAnonymousID%)?(\w)*$) url script-echo-response https://codeberg.org/ddgksf2013/Cuttlefish/raw/branch/master/Crack/revenuecat.js
 # > 格志日记+解锁订阅
 ^https:\/\/diary-id\.sumi\.io\/api\/profile url script-response-body https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gzrz.js
 # > Sleep Cycle:冥想助眠睡眠+解锁内购
