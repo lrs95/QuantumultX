@@ -823,6 +823,8 @@ HOST-SUFFIX,deliver.ifeng.com, reject
 HOST,api.newad.ifeng.com, reject
 HOST,ifengad.3g.ifeng.com, reject
 # (Q)
+# > 全民K歌
+HOST-SUFFIX,gdc.kg.qq.com, reject
 # > QingTing
 HOST,ad.qingting.fm, reject
 HOST,adlaunch.qingting.fm, reject
