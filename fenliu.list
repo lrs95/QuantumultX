@@ -2,6 +2,8 @@
 # > 某些APP要清除缓存或者重新安装APP，拦截广告才会生效！  
 # > 更新时间  2022.12.01
 # > */  
+# > 中国联通
+HOST-SUFFIX,m1.ad.10010.com, reject
 # > 深圳通微信小程序
 HOST-SUFFIX,wxsnsdythumb.wxs.qq.com, reject
 # > 光大银行阳光惠生活
