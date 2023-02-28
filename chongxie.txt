@@ -787,44 +787,44 @@ https://api.m.jd.com/client.action\?functionId=lite_advertising url reject
 # > 什么值得买值会员权益中心banner广告
 ^https?:\/\/zhiyou\.m\.smzdm\.com\/user\/vip\/ajax_get_banner url script-response-body https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.js
 # >> 新浪微博
-^https?:\/\/adimg\.uve\.weibo\.com\/public\/files\/image url reject
-^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject-200
-^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
-^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
-^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid= url reject
-^https?:\/\/simg\.s\.weibo\.com\/.+?_ios\d{2}\.gif url reject-img
-^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject-img
+#^https?:\/\/adimg\.uve\.weibo\.com\/public\/files\/image url reject
+#^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/(actionad|sdkad)\.php url reject-200
+#^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-200
+#^https?:\/\/weibointl\.api\.weibo\.cn\/portal\.php\?a=get_coopen_ads url reject-200
+#^https?:\/\/api\.weibo\.cn\/2\/statuses\/extend\?gsid= url reject
+#^https?:\/\/simg\.s\.weibo\.com\/.+?_ios\d{2}\.gif url reject-img
+#^https?:\/\/storage\.wax\.weibo\.com\/\w+\.(png|jpg|mp4) url reject-img
 # 微博去除开屏广告
-^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
+#^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_launch.js
 # > 微博去广告
-^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+#^https?://m?api\.weibo\.c(n|om)/2/(cardlist|searchall|page|statuses/(unread_)?friends(/|_)timeline|groups/timeline|statuses/(unread_hot_timeline|extend|video_mixtimeline)|profile/(me|statuses)|video/(community_tab|remind_info|tiny_stream_video_list)|checkin/show|\!/live/media_homelist|comments/build_comments|container/get_item) url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 # > 微博自定义tab皮肤
-^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+#^https://api.weibo.cn/2/!/client/light_skin url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 # > 微博非会员设置tab皮肤
-^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
+#^https://new.vip.weibo.cn/littleskin/preview url script-response-body https://raw.githubusercontent.com/zmqcherish/proxy-script/main/weibo_main.js
 # > 微博轻享版（原国际版）去广告
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users url reject-dict
+#^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php\?a=hot_search_users url reject-dict
 # ～ WeiboLite_微博国际版_热推荐@ddgksf2013
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? url reject-dict
+#^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/ad\/weibointl\? url reject-dict
 # ～ WeiboLite_微博国际版_sdkad@ddgksf2013
-https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php  url reject-dict
+#https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php  url reject-dict
 # ～ WeiboLite_微博国际版_屏蔽search_suggest@ddgksf2013 
 # 此处有待改善，请求的URL的文字直接填充在了搜索框，删除响应无效
 # ^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/page\/get_search_suggest url reject-dict
 # ～ WeiboLite_微博国际版_屏蔽searching_info@ddgksf2013
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info url script-echo-response https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
+#^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*user&a=get_searching_info url script-echo-response https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
 # ～ WeiboLite_微博国际版_屏蔽search_topic@ddgksf2013 
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic url script-echo-response https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
+#^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=search_topic url script-echo-response https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
 # ～ WeiboLite_微博国际版_屏蔽开屏广告@ddgksf2013 
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads url reject-dict
+#^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*ads url reject-dict
 # ～ WeiboLite_微博国际版_主页推荐tab|热门tab去广告@ddgksf2013
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
+#^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/unread_hot_timeline url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
 # ～ WeiboLite_微博国际版_主页关注tab去广告@ddgksf2013 
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
+#^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/statuses\/friends_timeline url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
 # ～ WeiboLite_微博国际版_趋势tab去广告@ddgksf2013 
-^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
+#^https?:\/\/m?api\.weibo\.c(n|om)\/\d\/cardlist url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
 # ～ WeiboLite_微博国际版_趋势顶部CARD去广告@ddgksf2013
-^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
+#^https?:\/\/weibointl\.api\.weibo\.c(n|om)\/portal\.php.*feed&a=trends url script-response-body https://gitlab.com/lrs195/moyu/-/raw/main/Script/weibo_json.js
 # > 新浪新闻
 ^https?+:\/\/edit\.sinaapp\.com\/ua\?t=adv url reject-200
 # > 国家地理杂志
